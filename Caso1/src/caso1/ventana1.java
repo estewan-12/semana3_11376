@@ -30,6 +30,7 @@ public class ventana1 extends JFrame implements ActionListener {
 	private JButton btnSumarDosReales;
 	private JScrollPane scrollPane;
 	private JTextArea txtS;
+	private JButton btnNewButton;
 
 	/**
 	 * Launch the application.
@@ -100,13 +101,13 @@ public class ventana1 extends JFrame implements ActionListener {
 		{
 			btnSumarTresEnteros = new JButton("Sumar tres enteros");
 			btnSumarTresEnteros.addActionListener(this);
-			btnSumarTresEnteros.setBounds(273, 40, 170, 23);
+			btnSumarTresEnteros.setBounds(283, 36, 170, 23);
 			contentPane.add(btnSumarTresEnteros);
 		}
 		{
 			btnSumarDosReales = new JButton("Sumar dos reales");
 			btnSumarDosReales.addActionListener(this);
-			btnSumarDosReales.setBounds(273, 70, 170, 23);
+			btnSumarDosReales.setBounds(273, 66, 170, 23);
 			contentPane.add(btnSumarDosReales);
 		}
 		{
@@ -117,6 +118,11 @@ public class ventana1 extends JFrame implements ActionListener {
 				txtS = new JTextArea();
 				scrollPane.setViewportView(txtS);
 			}
+		}
+		{
+			btnNewButton = new JButton("Borrar");
+			btnNewButton.setBounds(273, 94, 89, 23);
+			contentPane.add(btnNewButton);
 		}
 	}
 	public void actionPerformed(ActionEvent e) {
